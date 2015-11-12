@@ -58,3 +58,13 @@ $primary-border-color : $color-teal-900;
         }
     }
 }
+
+body.login{
+    background: url(../img/back.png);
+    background-color: #444;
+    background: url(../img/pinlayer2.png),url(../img/pinlayer1.png),url(../img/back.png);
+
+    .vertical-offset-200{
+        padding-top:200px;
+    }
+}

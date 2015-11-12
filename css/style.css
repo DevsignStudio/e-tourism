@@ -21,5 +21,11 @@
     background-color: #00796b; }
   .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
     color: #eeeeee; } }
+body.login {
+  background: url(../img/back.png);
+  background-color: #444;
+  background: url(../img/pinlayer2.png), url(../img/pinlayer1.png), url(../img/back.png); }
+  body.login .vertical-offset-200 {
+    padding-top: 200px; }
 
 /*# sourceMappingURL=style.css.map */
