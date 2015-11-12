@@ -1,0 +1,60 @@
+@import "color";
+$primary-color : $color-teal-500;
+$primary-dark-color : $color-teal-700;
+$primary-border-color : $color-teal-900;
+
+.navbar-custom {
+    background-color: $primary-color;
+    border: 0;
+
+    .navbar-brand {
+        color: $color-grey-200;
+    }
+
+    .navbar-nav {
+        & > li {
+            & > a {
+                color: $color-grey-200;
+                &:hover {
+                    color: $color-white;
+                }
+            }
+
+            &.active, &:focus, &.dropdown.open {
+                & > a, & > a:hover {
+                    background: $primary-dark-color;
+                }
+            }
+        }
+
+    }
+
+    .navbar-toggle, .navbar-toggle {
+        border: 0;
+        &:hover, &:focus {
+            background-color: $primary-dark-color;
+        }
+    }
+
+    .navbar-collapse, .navbar-form {
+        border-color: $primary-dark-color;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-custom{
+        .navbar-nav{
+            .open .dropdown-menu {
+                .divider {
+                    background-color: $primary-dark-color;
+                }
+
+                & > li {
+                    & > a {
+                        color: $color-grey-200;
+                    }
+                }
+            }
+        }
+    }
+}
