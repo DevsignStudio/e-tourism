@@ -3,9 +3,9 @@ Bootstrap for Etourism
 
 ### Page Todo:
 
-- [ ] Template
-- [ ] Index
-- [x] User Login
-- [x] User Register
-- [x] User Dashboard - Include package list
-- [x] Admin Login
+- [X] Template
+- [X] Index
+- [ ] User Login
+- [ ] User Register
+- [ ] User Dashboard - Include package list
+- [ ] Admin Login
