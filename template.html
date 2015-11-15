@@ -33,8 +33,8 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Link</a></li>
+                    <li class="menu-head"><a href="#" class="push_menu"><span class="glyphicon glyphicon-align-justify pull-right"></span></a></li>
+                    <li><a href="#" >Link</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -51,13 +51,12 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Link</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> Users <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile </a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Settings </a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
+                            <li><a href="login-user.html"><span class="glyphicon glyphicon-log-out"></span> Logout </a></li>
                         </ul>
                     </li>
                 </ul>
@@ -65,7 +64,39 @@
         </div>
     </nav>
 
+    <div class="container">
+        <div class="row">
+            <div class="wrapper">
+                <div class="side-bar">
+                    <div class="profile-userpic" style="margin-top:30px">
+                        <img src="img/download.jpg">
+                    </div>
+                    <ul>
+                        <div class="menu">
+                            <li>
+                                <a href="#"  class="active">Dashboard <span class="glyphicon glyphicon-home pull-right"></span></a>
+                            </li>
+                            <li>
+                                <a href="#" >Account Settings<span class="glyphicon glyphicon-user pull-right"></span></a>
+                            </li>
+                            <li>
+                                <a href="#" >Help <span class="glyphicon glyphicon-question-sign pull-right"></span></a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".push_menu").click(function(){
+            $(".wrapper").toggleClass("active");
+        });
+    });
+    </script>
 </body>
 </html>
