@@ -116,4 +116,12 @@ body.login {
   -moz-border-radius: 50% !important;
   border-radius: 50% !important; }
 
+.content {
+  padding-left: 200px;
+  transition: padding-left 0.5s; }
+
+.active > .content {
+  padding-left: 50px;
+  transition: padding-left 0.5s; }
+
 /*# sourceMappingURL=style.css.map */

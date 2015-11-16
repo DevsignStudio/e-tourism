@@ -70,7 +70,7 @@ body.login{
 }
 
 .custyle {
-    ;
+
 }
 .custab{
     border: 1px solid #ccc;
@@ -159,19 +159,17 @@ body.login{
 }
 
 .side-bar ul .menu li  a.active:before {
-   content:"";
-   position: absolute;
-   width: 0;
-   height: 0;
-   border-top: 20px solid transparent;
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
 
-	border-left: 7px solid #3BD9D2;
+    border-left: 7px solid #3BD9D2;
     margin-top: -10px;
     margin-left: 180px;
 }
-
-
 
 .active > .side-bar
 {
@@ -179,15 +177,24 @@ body.login{
     transition: margin-left 0.5s;
 }
 
-
-
 .profile-userpic img {
-  float: none;
-  margin-left: 20%;
-  margin-bottom: 5%;
-  width: 50%;
-  height: 50%;
-  -webkit-border-radius: 50% !important;
-  -moz-border-radius: 50% !important;
-  border-radius: 50% !important;
+    float: none;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    width: 50%;
+    height: 50%;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+}
+
+.content
+{
+    padding-left: 200px;
+    transition: padding-left 0.5s;
+}
+.active > .content
+{
+    padding-left:50px;
+    transition: padding-left 0.5s;
 }
