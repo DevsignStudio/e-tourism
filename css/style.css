@@ -124,4 +124,18 @@ body.login {
   padding-left: 50px;
   transition: padding-left 0.5s; }
 
+textarea {
+  resize: none; }
+
+.red {
+  color: red; }
+
+.thumbnail-package {
+  padding-left: 95px;
+  padding-bottom: 20px; }
+
+img {
+  width: 400px;
+  margin: auto; }
+
 /*# sourceMappingURL=style.css.map */

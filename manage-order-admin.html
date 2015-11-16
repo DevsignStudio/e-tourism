@@ -81,6 +81,7 @@
                             <th class="text-center">Action</th>
                         </tr>
                     </thead>
+                    <a href="#" class="btn btn-primary pull-right" data-toggle="modal" data-target="#myAdd"><b>+</b> Add new Package</a>
                     <tr>
                         <td>1</td>
                         <td><a href="" data-toggle="modal" data-target="#myModal1">Langkawi Package</a></td>
@@ -89,7 +90,7 @@
                         <td><span class="label label-warning">Payment Overdue</span></td>
                         <td>11/12/2015</td>
                         <td class="text-center">
-                            <a class='btn btn-info btn-xs' href="#"  data-toggle="modal" data-target="#myEdit"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myAdd"><span class="glyphicon glyphicon-info-sign"></span> Add </a>
+                            <a class='btn btn-info btn-xs' href="#"  data-toggle="modal" data-target="#myEdit"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-info-sign"></span> Add Add-On</a>
                             <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a> <a href="#" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-info-sign"></span> View </a>
 
                         </td>
@@ -101,7 +102,10 @@
                         <td>RM 440.00</td>
                         <td><span class="label label-success">Success</span></td>
                         <td>11/12/2015</td>
-                        <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+                        <td class="text-center">
+                            <a class='btn btn-info btn-xs' href="#"  data-toggle="modal" data-target="#myEdit"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-info-sign"></span> Add Add-On</a>
+                            <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a> <a href="#" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-info-sign"></span> View </a>
+                        </td>
                     </tr>
                     <tr>
                         <td>3</td>
@@ -110,7 +114,10 @@
                         <td>RM 220.00</td>
                         <td><span class="label label-primary">In-Progress</span></td>
                         <td>11/12/2015</td>
-                        <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a> </td>
+                        <td class="text-center">
+                            <a class='btn btn-info btn-xs' href="#"  data-toggle="modal" data-target="#myEdit"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-info-sign"></span> Add Add-On</a>
+                            <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a> <a href="#" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-info-sign"></span> View </a>
+                        </td>
                     </tr>
                     <tr>
                         <td>4</td>
@@ -119,7 +126,10 @@
                         <td>RM 550.00</td>
                         <td><span class="label label-danger">Cancel</span></td>
                         <td>11/12/2015</td>
-                        <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+                        <td class="text-center">
+                            <a class='btn btn-info btn-xs' href="#"  data-toggle="modal" data-target="#myEdit"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-info-sign"></span> Add Add-On</a>
+                            <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a> <a href="#" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-info-sign"></span> View </a>
+                        </td>
                     </tr>
 
                 </table>
@@ -132,32 +142,34 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">User Example : Lili93</h4>
+                    <h4 class="modal-title">Package Description</h4>
                 </div>
                 <div class="modal-body">
                     <form action="" class="form-horizontal">
+
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">Email</label>
-                            <div class="col-sm-10">
-                                <p class="form-control-static">email@example.com</p>
+                            <div class="col-sm-9">
+                                <div class="thumbnail-package">
+                                    <img src="img/langkawi.jpg" />
+                                </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">Username</label>
+                            <label class="col-sm-2 control-label">Package Name: </label>
                             <div class="col-sm-10">
-                                <p class="form-control-static">luxey93</p>
+                                <p class="form-control-static">Langkawi Package</p>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">Name</label>
+                            <label class="col-sm-2 control-label">Package Price: </label>
                             <div class="col-sm-10">
-                                <p class="form-control-static">Nijol Jaim Anu'ar</p>
+                                <p class="form-control-static">RM 130.00</p>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">Gender</label>
+                            <label class="col-sm-2 control-label">Package Description: </label>
                             <div class="col-sm-10">
-                                <p class="form-control-static">Female</p>
+                                <p class="form-control-static">An archipelago comprising of 99 Islands, Langkawi lies in the southern Andaman Sea adjacent to Thailand border. Langkawi is the part of Malayasias Kedah state and has a land area of about 528 sq. kms. Bestowed with some of the worlds finest white-sand beaches, lush green forests and rocky mountains, Langkawi draws visitors for a memorable honeymoon. Langkawi packages are also very popular for family vacations as well leisure trip. Numerous international airlines offer flights for travel to Langkawi. If you wish for holidays in Langkawi, check out the suitable holiday deals and book holiday packages. Langkawi tours provide you a wonderful chance to enjoy a laidback vacation in the lap of nature. .</p>
                             </div>
                         </div>
                     </form>
@@ -230,16 +242,25 @@
                 <form action="" class="form-horizontal">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title">Modal title 4</h4>
+                        <h4 class="modal-title">Edit Package</h4>
                     </div>
                     <div class="modal-body">
-
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Package Name: </label>
                             <div class="col-sm-10">
-                                <div class="form-group">
-                                    <input class="form-control" placeholder="First Name" name="firstName" type="text">
-                                </div>
+                                <input class="form-control" placeholder="Package Name" name="packageName" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Package Price: </label>
+                            <div class="col-sm-10">
+                                <input class="form-control" placeholder="Package Price" name="packagePrice" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Package Description: </label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" placeholder="Package Description" name="packageDescription" type="text" rows="5"></textarea>
                             </div>
                         </div>
 
@@ -259,16 +280,27 @@
                 <form action="" class="form-horizontal">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title">Modal title 4</h4>
+                        <h4 class="modal-title">Add New Package</h4>
                     </div>
                     <div class="modal-body">
 
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Package Name: </label>
                             <div class="col-sm-10">
-                                <div class="form-group">
-                                    <input class="form-control" placeholder="First Name" name="firstName" type="text">
-                                </div>
+                                <input class="form-control" placeholder="Package Name" name="packageName" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Package Price: </label>
+                            <div class="col-sm-10">
+                                <input class="form-control" placeholder="Package Price" name="packagePrice" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Package Description: </label>
+                            <div class="col-sm-10" >
+                                <textarea class="form-control" placeholder="Package Description" name="#packageDescription" id="packageDescription" type="textarea" maxlength="300" rows="5"></textarea>
+                                <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>
                             </div>
                         </div>
 
@@ -284,6 +316,27 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('#characterLeft').text('300 characters left');
+        $('#packageDescription').keydown(function () {
+            var max = 300;
+            var len = $(this).val().length;
+            if (len >= max) {
+                $('#characterLeft').text('You have reached the limit');
+                $('#characterLeft').addClass('red');
+                $('#btnSubmit').addClass('disabled');
+            }
+            else {
+                var ch = max - len;
+                $('#characterLeft').text(ch + ' characters left');
+                $('#btnSubmit').removeClass('disabled');
+                $('#characterLeft').removeClass('red');
+            }
+        });
+    });
+    </script>
+
 
 </body>
 </html>
