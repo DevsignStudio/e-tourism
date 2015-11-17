@@ -236,6 +236,7 @@
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
+    <!-- /.Edit Package Modal -->
     <div class="modal fade" id="myEdit">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -245,6 +246,12 @@
                         <h4 class="modal-title">Edit Package</h4>
                     </div>
                     <div class="modal-body">
+                        <div class="form-group" style="text-align: center; padding-left: 40%;">
+                            <div class="form-group col-sm-6" >
+                                <p>Add Images</p>
+                                <div class="img-picker"></div>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Package Name: </label>
                             <div class="col-sm-10">
@@ -259,12 +266,13 @@
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Package Description: </label>
-                            <div class="col-sm-10">
-                                <textarea class="form-control" placeholder="Package Description" name="packageDescription" type="text" rows="5"></textarea>
+                            <div class="col-sm-10" >
+                                <textarea class="form-control" placeholder="Package Description" name="#packageDescription" id="packageDescription" type="textarea" maxlength="300" rows="5"></textarea>
+                                <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>
                             </div>
                         </div>
-
                     </div>
+                    
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         <button type="submit" class="btn btn-primary">Save changes</button>
@@ -274,6 +282,7 @@
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
+    <!-- /.Add New Package Modal -->
     <div class="modal fade" id="myAdd">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -283,7 +292,12 @@
                         <h4 class="modal-title">Add New Package</h4>
                     </div>
                     <div class="modal-body">
-
+                        <div class="form-group" style="text-align: center; padding-left: 40%;">
+                            <div class="form-group col-sm-6" >
+                                <p>Add Images</p>
+                                <div class="img-picker"></div>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Package Name: </label>
                             <div class="col-sm-10">
@@ -335,6 +349,91 @@
             }
         });
     });
+    </script>
+
+    <script>
+    (function ( $ ) {
+
+        $.fn.imagePicker = function( options ) {
+
+            // Define plugin options
+            var settings = $.extend({
+                // Input name attribute
+                name: "",
+                // Classes for styling the input
+                class: "form-control btn btn-default btn-block",
+                // Icon which displays in center of input
+                icon: "glyphicon glyphicon-plus"
+            }, options );
+
+            // Create an input inside each matched element
+            return this.each(function() {
+                $(this).html(create_btn(this, settings));
+            });
+
+        };
+
+        // Private function for creating the input element
+        function create_btn(that, settings) {
+            // The input icon element
+            var picker_btn_icon = $('<i class="'+settings.icon+'"></i>');
+
+            // The actual file input which stays hidden
+            var picker_btn_input = $('<input type="file" name="'+settings.name+'" />');
+
+            // The actual element displayed
+            var picker_btn = $('<div class="'+settings.class+' img-upload-btn"></div>')
+            .append(picker_btn_icon)
+            .append(picker_btn_input);
+
+            // File load listener
+            picker_btn_input.change(function() {
+                if ($(this).prop('files')[0]) {
+                    // Use FileReader to get file
+                    var reader = new FileReader();
+
+                    // Create a preview once image has loaded
+                    reader.onload = function(e) {
+                        var preview = create_preview(that, e.target.result, settings);
+                        $(that).html(preview);
+                    }
+
+                    // Load image
+                    reader.readAsDataURL(picker_btn_input.prop('files')[0]);
+                }
+            });
+
+            return picker_btn
+        };
+
+        // Private function for creating a preview element
+        function create_preview(that, src, settings) {
+
+            // The preview image
+            var picker_preview_image = $('<img src="'+src+'" class="img-responsive img-rounded" />');
+
+            // The remove image button
+            var picker_preview_remove = $('<button class="btn btn-link"><small>Remove</small></button>');
+
+            // The preview element
+            var picker_preview = $('<div class="text-center"></div>')
+            .append(picker_preview_image)
+            .append(picker_preview_remove);
+
+            // Remove image listener
+            picker_preview_remove.click(function() {
+                var btn = create_btn(that, settings);
+                $(that).html(btn);
+            });
+
+            return picker_preview;
+        };
+
+    }( jQuery ));
+
+    $(document).ready(function() {
+        $('.img-picker').imagePicker({name: 'images-picker'});
+    })
     </script>
 
 
