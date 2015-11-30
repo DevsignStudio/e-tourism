@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E-tourism Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    <nav class="navbar navbar-inverse navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">E-Tourism</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 custyle" style="margin-top: 70px;">
+                <h1>Manage Package</h1>
+                <table class="table table-striped custab">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Package</th>
+                            <th>Total Price</th>
+                            <th>Status</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <a href="#" class="btn btn-primary pull-right" data-toggle="modal" data-target="#myAdd"><b>+</b> Add new Package</a>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="" data-toggle="modal" data-target="#myModal1">Langkawi Package</a></td>
+                        <td>RM 990.00</td>
+                        <td><span class="label label-warning">Payment Overdue</span></td>
+                        <td class="text-center">
+                            <a class='btn btn-info btn-xs' href="#"  data-toggle="modal" data-target="#myEdit"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#addOn"><span class="glyphicon glyphicon-info-sign"></span> Add Add-On</a>
+                            <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a> <a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myView"><span class="glyphicon glyphicon-info-sign"></span> View </a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a href="" data-toggle="modal" data-target="#myModal2">Sabah Package</a></td>
+                        <td>RM 440.00</td>
+                        <td><span class="label label-success">Success</span></td>
+                        <td class="text-center">
+                            <a class='btn btn-info btn-xs' href="#"  data-toggle="modal" data-target="#myEdit"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-info-sign"></span> Add Add-On</a>
+                            <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a> <a href="#" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-info-sign"></span> View </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><a href="" data-toggle="modal" data-target="#myModal3">Tioman Island Package</a></td>
+                        <td>RM 220.00</td>
+                        <td><span class="label label-primary">In-Progress</span></td>
+                        <td class="text-center">
+                            <a class='btn btn-info btn-xs' href="#"  data-toggle="modal" data-target="#myEdit"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-info-sign"></span> Add Add-On</a>
+                            <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a> <a href="#" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-info-sign"></span> View </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><a href="" data-toggle="modal" data-target="#myModal4">Penang Package</a></td>
+                        <td>RM 550.00</td>
+                        <td><span class="label label-danger">Cancel</span></td>
+                        <td class="text-center">
+                            <a class='btn btn-info btn-xs' href="#"  data-toggle="modal" data-target="#myEdit"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-info-sign"></span> Add Add-On</a>
+                            <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a> <a href="#" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-info-sign"></span> View </a>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Package Description</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form-horizontal">
+
+                        <div class="form-group">
+                            <div class="col-sm-9">
+                                <div class="thumbnail-package">
+                                    <img src="img/langkawi.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Package Name: </label>
+                            <div class="col-sm-10">
+                                <p class="form-control-static">Langkawi Package</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Package Price: </label>
+                            <div class="col-sm-10">
+                                <p class="form-control-static">RM 130.00</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Package Description: </label>
+                            <div class="col-sm-10">
+                                <p class="form-control-static">An archipelago comprising of 99 Islands, Langkawi lies in the southern Andaman Sea adjacent to Thailand border. Langkawi is the part of Malayasias Kedah state and has a land area of about 528 sq. kms. Bestowed with some of the worlds finest white-sand beaches, lush green forests and rocky mountains, Langkawi draws visitors for a memorable honeymoon. Langkawi packages are also very popular for family vacations as well leisure trip. Numerous international airlines offer flights for travel to Langkawi. If you wish for holidays in Langkawi, check out the suitable holiday deals and book holiday packages. Langkawi tours provide you a wonderful chance to enjoy a laidback vacation in the lap of nature. .</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <a href="" type="button" class="btn btn-primary">View Complete Details</a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Modal title 2</h4>
+                </div>
+                <div class="modal-body">
+                    <p>One fine body&hellip;</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id="myModal3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Modal title 3</h4>
+                </div>
+                <div class="modal-body">
+                    <p>One fine body&hellip;</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id="myModal4">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Modal title 4</h4>
+                </div>
+                <div class="modal-body">
+                    <p>One fine body&hellip;</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- /.Edit Package Modal -->
+    <div class="modal fade" id="myEdit">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form action="" class="form-horizontal">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Edit Package</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group" style="text-align: center; padding-left: 40%;">
+                            <div class="form-group col-sm-6" >
+                                <p>Change Images</p>
+                                <div class="img-picker"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Package Name: </label>
+                            <div class="col-sm-10">
+                                <input class="form-control" placeholder="Package Name" name="packageName" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Package Price: </label>
+                            <div class="col-sm-10">
+                                <input class="form-control" placeholder="Package Price" name="packagePrice" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Package Description: </label>
+                            <div class="col-sm-10" >
+                                <textarea class="form-control" placeholder="Package Description" name="#packageDescription" id="packageDescriptionn" type="textarea" maxlength="300" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                </form>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- /.Add New Package Modal -->
+    <div class="modal fade" id="myAdd">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form action="" class="form-horizontal">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Add New Package</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group" style="text-align: center; padding-left: 40%;">
+                            <div class="form-group col-sm-6" >
+                                <p>Add Images</p>
+                                <div class="img-picker"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Package Name: </label>
+                            <div class="col-sm-10">
+                                <input class="form-control" placeholder="Package Name" name="packageName" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Package Price: </label>
+                            <div class="col-sm-10">
+                                <input class="form-control" placeholder="Package Price" name="packagePrice" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Package Description: </label>
+                            <div class="col-sm-10" >
+                                <textarea class="form-control" placeholder="Package Description" name="#packageDescription1" id="packageDescription1" type="textarea" maxlength="300" rows="5"></textarea>
+                                <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                </form>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- /.Add-On Modal -->
+    <div class="modal fade" id="addOn">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form action="" class="form-horizontal">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Add Add-On</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Add-On Name: </label>
+                            <div class="col-sm-10">
+                                <input class="form-control" placeholder="Add-On Name" name="addOnName" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Add-On Price: </label>
+                            <div class="col-sm-10">
+                                <input class="form-control" placeholder="Ad-On Price" name="addOnPrice" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                </form>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- /.View Package Modal -->
+    <div class="modal fade" id="myView">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form action="" class="form-horizontal">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">View Package</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h1 class="modal-title" style="text-align:center; padding-bottom:50px;">Langkawi Island (RM400)</h1>
+                        <form action="" class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-sm-9">
+                                    <div class="thumbnail-package">
+                                        <img src="img/langkawi.jpg" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Package Description: </label>
+                                <div class="col-sm-10">
+                                    <p class="form-control-static">An archipelago comprising of 99 Islands, Langkawi lies in the southern Andaman Sea adjacent to Thailand border. Langkawi is the part of Malayasias Kedah state and has a land area of about 528 sq. kms. Bestowed with some of the worlds finest white-sand beaches, lush green forests and rocky mountains, Langkawi draws visitors for a memorable honeymoon. Langkawi packages are also very popular for family vacations as well leisure trip. Numerous international airlines offer flights for travel to Langkawi. If you wish for holidays in Langkawi, check out the suitable holiday deals and book holiday packages. Langkawi tours provide you a wonderful chance to enjoy a laidback vacation in the lap of nature. .</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                </form>
+            </div>
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('#characterLeft').text('300 characters left');
+        $('#packageDescription').keydown(function () {
+            var max = 300;
+            var len = $(this).val().length;
+            if (len >= max) {
+                $('#characterLeft').text('You have reached the limit');
+                $('#characterLeft').addClass('red');
+                $('#btnSubmit').addClass('disabled');
+            }
+            else {
+                var ch = max - len;
+                $('#characterLeft').text(ch + ' characters left');
+                $('#btnSubmit').removeClass('disabled');
+                $('#characterLeft').removeClass('red');
+            }
+        });
+    });
+    </script>
+
+    <script>
+    (function ( $ ) {
+
+        $.fn.imagePicker = function( options ) {
+
+            // Define plugin options
+            var settings = $.extend({
+                // Input name attribute
+                name: "",
+                // Classes for styling the input
+                class: "form-control btn btn-default btn-block",
+                // Icon which displays in center of input
+                icon: "glyphicon glyphicon-plus"
+            }, options );
+
+            // Create an input inside each matched element
+            return this.each(function() {
+                $(this).html(create_btn(this, settings));
+            });
+
+        };
+
+        // Private function for creating the input element
+        function create_btn(that, settings) {
+            // The input icon element
+            var picker_btn_icon = $('<i class="'+settings.icon+'"></i>');
+
+            // The actual file input which stays hidden
+            var picker_btn_input = $('<input type="file" name="'+settings.name+'" />');
+
+            // The actual element displayed
+            var picker_btn = $('<div class="'+settings.class+' img-upload-btn"></div>')
+            .append(picker_btn_icon)
+            .append(picker_btn_input);
+
+            // File load listener
+            picker_btn_input.change(function() {
+                if ($(this).prop('files')[0]) {
+                    // Use FileReader to get file
+                    var reader = new FileReader();
+
+                    // Create a preview once image has loaded
+                    reader.onload = function(e) {
+                        var preview = create_preview(that, e.target.result, settings);
+                        $(that).html(preview);
+                    }
+
+                    // Load image
+                    reader.readAsDataURL(picker_btn_input.prop('files')[0]);
+                }
+            });
+
+            return picker_btn
+        };
+
+        // Private function for creating a preview element
+        function create_preview(that, src, settings) {
+
+            // The preview image
+            var picker_preview_image = $('<img src="'+src+'" class="img-responsive img-rounded" />');
+
+            // The remove image button
+            var picker_preview_remove = $('<button class="btn btn-link"><small>Remove</small></button>');
+
+            // The preview element
+            var picker_preview = $('<div class="text-center"></div>')
+            .append(picker_preview_image)
+            .append(picker_preview_remove);
+
+            // Remove image listener
+            picker_preview_remove.click(function() {
+                var btn = create_btn(that, settings);
+                $(that).html(btn);
+            });
+
+            return picker_preview;
+        };
+
+    }( jQuery ));
+
+    $(document).ready(function() {
+        $('.img-picker').imagePicker({name: 'images-picker'});
+    })
+    </script>
+
+
+</body>
+</html>
