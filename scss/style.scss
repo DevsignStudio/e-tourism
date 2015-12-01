@@ -69,6 +69,7 @@ body.login{
     }
 }
 
+// Table design style
 .custyle {
 
 }
@@ -82,8 +83,9 @@ body.login{
 .custab:hover{
     box-shadow: 3px 3px 0px transparent;
     transition: 0.5s;
-}
+}//
 
+// Side bar style
 @import url(http://fonts.googleapis.com/css?family=Lato);
 
 .container.template
@@ -186,8 +188,9 @@ body.login{
     -webkit-border-radius: 50% !important;
     -moz-border-radius: 50% !important;
     border-radius: 50% !important;
-}
+}//
 
+// manager-order-admin.html style
 .content
 {
     padding-left: 200px;
@@ -198,3 +201,83 @@ body.login{
     padding-left:50px;
     transition: padding-left 0.5s;
 }
+
+textarea {
+    resize: none;
+}
+
+.red{
+    color:red;
+    }
+
+.thumbnail-package {
+    padding-left: 95px;
+    padding-bottom: 20px;
+}
+img {
+    width:400px; margin:auto; }
+
+    .img-upload-btn {
+        position: relative;
+        overflow: hidden;
+        padding-top: 95%;
+    }
+
+    .img-upload-btn input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+
+    .img-upload-btn i {
+        position: absolute;
+        height: 16px;
+        width: 16px;
+        top: 50%;
+        left: 50%;
+        margin-top: -8px;
+        margin-left: -8px;
+    }
+
+    .btn-radio {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-radio input[type=radio] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+//
+
+// package.html
+.btn-product{
+	width: 100%;
+}
+
+
+
+
+
+//

@@ -68,28 +68,25 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 custyle" style="margin-top: 70px;">
-                <h1>Manage Order</h1>
+                <h1>Manage Package</h1>
                 <table class="table table-striped custab">
                     <thead>
                         <tr>
                             <th>ID</th>
                             <th>Package</th>
-                            <th>Package Description</th>
                             <th>Total Price</th>
                             <th>Status</th>
-                            <th>Order Date</th>
                             <th class="text-center">Action</th>
                         </tr>
                     </thead>
+                    <a href="#" class="btn btn-primary pull-right" data-toggle="modal" data-target="#myAdd"><b>+</b> Add new Package</a>
                     <tr>
                         <td>1</td>
                         <td><a href="" data-toggle="modal" data-target="#myModal1">Langkawi Package</a></td>
-                        <td>vfhjkjlkjjddghj</td>
                         <td>RM 990.00</td>
                         <td><span class="label label-warning">Payment Overdue</span></td>
-                        <td>11/12/2015</td>
                         <td class="text-center">
-                            <a class='btn btn-info btn-xs' href="#"  data-toggle="modal" data-target="#myEdit"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myAdd"><span class="glyphicon glyphicon-info-sign"></span> Add </a>
+                            <a class='btn btn-info btn-xs' href="#"  data-toggle="modal" data-target="#myEdit"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-info-sign"></span> Add Add-On</a>
                             <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a> <a href="#" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-info-sign"></span> View </a>
 
                         </td>
@@ -97,29 +94,32 @@
                     <tr>
                         <td>2</td>
                         <td><a href="" data-toggle="modal" data-target="#myModal2">Sabah Package</a></td>
-                        <td>wwwwwwwww</td>
                         <td>RM 440.00</td>
                         <td><span class="label label-success">Success</span></td>
-                        <td>11/12/2015</td>
-                        <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+                        <td class="text-center">
+                            <a class='btn btn-info btn-xs' href="#"  data-toggle="modal" data-target="#myEdit"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-info-sign"></span> Add Add-On</a>
+                            <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a> <a href="#" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-info-sign"></span> View </a>
+                        </td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td><a href="" data-toggle="modal" data-target="#myModal3">Tioman Island Package</a></td>
-                        <td>fffffffffffffffffff</td>
                         <td>RM 220.00</td>
                         <td><span class="label label-primary">In-Progress</span></td>
-                        <td>11/12/2015</td>
-                        <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a> </td>
+                        <td class="text-center">
+                            <a class='btn btn-info btn-xs' href="#"  data-toggle="modal" data-target="#myEdit"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-info-sign"></span> Add Add-On</a>
+                            <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a> <a href="#" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-info-sign"></span> View </a>
+                        </td>
                     </tr>
                     <tr>
                         <td>4</td>
                         <td><a href="" data-toggle="modal" data-target="#myModal4">Penang Package</a></td>
-                        <td>sssssss</td>
                         <td>RM 550.00</td>
                         <td><span class="label label-danger">Cancel</span></td>
-                        <td>11/12/2015</td>
-                        <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+                        <td class="text-center">
+                            <a class='btn btn-info btn-xs' href="#"  data-toggle="modal" data-target="#myEdit"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-info-sign"></span> Add Add-On</a>
+                            <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a> <a href="#" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-info-sign"></span> View </a>
+                        </td>
                     </tr>
 
                 </table>
@@ -132,32 +132,34 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">User Example : Lili93</h4>
+                    <h4 class="modal-title">Package Description</h4>
                 </div>
                 <div class="modal-body">
                     <form action="" class="form-horizontal">
+
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">Email</label>
-                            <div class="col-sm-10">
-                                <p class="form-control-static">email@example.com</p>
+                            <div class="col-sm-9">
+                                <div class="thumbnail-package">
+                                    <img src="img/langkawi.jpg" />
+                                </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">Username</label>
+                            <label class="col-sm-2 control-label">Package Name: </label>
                             <div class="col-sm-10">
-                                <p class="form-control-static">luxey93</p>
+                                <p class="form-control-static">Langkawi Package</p>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">Name</label>
+                            <label class="col-sm-2 control-label">Package Price: </label>
                             <div class="col-sm-10">
-                                <p class="form-control-static">Nijol Jaim Anu'ar</p>
+                                <p class="form-control-static">RM 130.00</p>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">Gender</label>
+                            <label class="col-sm-2 control-label">Package Description: </label>
                             <div class="col-sm-10">
-                                <p class="form-control-static">Female</p>
+                                <p class="form-control-static">An archipelago comprising of 99 Islands, Langkawi lies in the southern Andaman Sea adjacent to Thailand border. Langkawi is the part of Malayasias Kedah state and has a land area of about 528 sq. kms. Bestowed with some of the worlds finest white-sand beaches, lush green forests and rocky mountains, Langkawi draws visitors for a memorable honeymoon. Langkawi packages are also very popular for family vacations as well leisure trip. Numerous international airlines offer flights for travel to Langkawi. If you wish for holidays in Langkawi, check out the suitable holiday deals and book holiday packages. Langkawi tours provide you a wonderful chance to enjoy a laidback vacation in the lap of nature. .</p>
                             </div>
                         </div>
                     </form>
@@ -224,26 +226,43 @@
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
+    <!-- /.Edit Package Modal -->
     <div class="modal fade" id="myEdit">
         <div class="modal-dialog">
             <div class="modal-content">
                 <form action="" class="form-horizontal">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title">Modal title 4</h4>
+                        <h4 class="modal-title">Edit Package</h4>
                     </div>
                     <div class="modal-body">
-
+                        <div class="form-group" style="text-align: center; padding-left: 40%;">
+                            <div class="form-group col-sm-6" >
+                                <p>Add Images</p>
+                                <div class="img-picker"></div>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Package Name: </label>
                             <div class="col-sm-10">
-                                <div class="form-group">
-                                    <input class="form-control" placeholder="First Name" name="firstName" type="text">
-                                </div>
+                                <input class="form-control" placeholder="Package Name" name="packageName" type="text">
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Package Price: </label>
+                            <div class="col-sm-10">
+                                <input class="form-control" placeholder="Package Price" name="packagePrice" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Package Description: </label>
+                            <div class="col-sm-10" >
+                                <textarea class="form-control" placeholder="Package Description" name="#packageDescription" id="packageDescriptionn type="textarea" maxlength="300" rows="5"></textarea>
 
+                            </div>
+                        </div>
                     </div>
+
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         <button type="submit" class="btn btn-primary">Save changes</button>
@@ -253,22 +272,39 @@
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
+    <!-- /.Add New Package Modal -->
     <div class="modal fade" id="myAdd">
         <div class="modal-dialog">
             <div class="modal-content">
                 <form action="" class="form-horizontal">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title">Modal title 4</h4>
+                        <h4 class="modal-title">Add New Package</h4>
                     </div>
                     <div class="modal-body">
-
+                        <div class="form-group" style="text-align: center; padding-left: 40%;">
+                            <div class="form-group col-sm-6" >
+                                <p>Add Images</p>
+                                <div class="img-picker"></div>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Package Name: </label>
                             <div class="col-sm-10">
-                                <div class="form-group">
-                                    <input class="form-control" placeholder="First Name" name="firstName" type="text">
-                                </div>
+                                <input class="form-control" placeholder="Package Name" name="packageName" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Package Price: </label>
+                            <div class="col-sm-10">
+                                <input class="form-control" placeholder="Package Price" name="packagePrice" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Package Description: </label>
+                            <div class="col-sm-10" >
+                                <textarea class="form-control" placeholder="Package Description" name="#packageDescription" id="packageDescription" type="textarea" maxlength="300" rows="5"></textarea>
+                                <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>
                             </div>
                         </div>
 
@@ -284,6 +320,112 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('#characterLeft').text('300 characters left');
+        $('#packageDescription').keydown(function () {
+            var max = 300;
+            var len = $(this).val().length;
+            if (len >= max) {
+                $('#characterLeft').text('You have reached the limit');
+                $('#characterLeft').addClass('red');
+                $('#btnSubmit').addClass('disabled');
+            }
+            else {
+                var ch = max - len;
+                $('#characterLeft').text(ch + ' characters left');
+                $('#btnSubmit').removeClass('disabled');
+                $('#characterLeft').removeClass('red');
+            }
+        });
+    });
+    </script>
+
+    <script>
+    (function ( $ ) {
+
+        $.fn.imagePicker = function( options ) {
+
+            // Define plugin options
+            var settings = $.extend({
+                // Input name attribute
+                name: "",
+                // Classes for styling the input
+                class: "form-control btn btn-default btn-block",
+                // Icon which displays in center of input
+                icon: "glyphicon glyphicon-plus"
+            }, options );
+
+            // Create an input inside each matched element
+            return this.each(function() {
+                $(this).html(create_btn(this, settings));
+            });
+
+        };
+
+        // Private function for creating the input element
+        function create_btn(that, settings) {
+            // The input icon element
+            var picker_btn_icon = $('<i class="'+settings.icon+'"></i>');
+
+            // The actual file input which stays hidden
+            var picker_btn_input = $('<input type="file" name="'+settings.name+'" />');
+
+            // The actual element displayed
+            var picker_btn = $('<div class="'+settings.class+' img-upload-btn"></div>')
+            .append(picker_btn_icon)
+            .append(picker_btn_input);
+
+            // File load listener
+            picker_btn_input.change(function() {
+                if ($(this).prop('files')[0]) {
+                    // Use FileReader to get file
+                    var reader = new FileReader();
+
+                    // Create a preview once image has loaded
+                    reader.onload = function(e) {
+                        var preview = create_preview(that, e.target.result, settings);
+                        $(that).html(preview);
+                    }
+
+                    // Load image
+                    reader.readAsDataURL(picker_btn_input.prop('files')[0]);
+                }
+            });
+
+            return picker_btn
+        };
+
+        // Private function for creating a preview element
+        function create_preview(that, src, settings) {
+
+            // The preview image
+            var picker_preview_image = $('<img src="'+src+'" class="img-responsive img-rounded" />');
+
+            // The remove image button
+            var picker_preview_remove = $('<button class="btn btn-link"><small>Remove</small></button>');
+
+            // The preview element
+            var picker_preview = $('<div class="text-center"></div>')
+            .append(picker_preview_image)
+            .append(picker_preview_remove);
+
+            // Remove image listener
+            picker_preview_remove.click(function() {
+                var btn = create_btn(that, settings);
+                $(that).html(btn);
+            });
+
+            return picker_preview;
+        };
+
+    }( jQuery ));
+
+    $(document).ready(function() {
+        $('.img-picker').imagePicker({name: 'images-picker'});
+    })
+    </script>
+
 
 </body>
 </html>
